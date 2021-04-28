@@ -1,0 +1,164 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Archivo', sans-serif;
+}
+
+body header {
+  height: 75px;
+  border-bottom: 1px solid #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: #FFFFFF;
+}
+
+body header .text {
+  color: #5A4B49;
+  font-weight: 400;
+}
+
+body header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+body header div .logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 27px;
+}
+
+body header div .logo-container .logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FF7C76;
+}
+
+body header div .search-input {
+  position: relative;
+}
+
+body header div .search-input input {
+  width: 417px;
+  height: 40px;
+  padding: 0 42px 0 21px;
+  border: 1px solid rgba(193, 139, 134, 0.2);
+  border-radius: 20px;
+  outline: none;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+body header div .search-input input::-webkit-input-placeholder {
+  color: rgba(90, 75, 73, 0.4);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+body header div .search-input input:-ms-input-placeholder {
+  color: rgba(90, 75, 73, 0.4);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+body header div .search-input input::-ms-input-placeholder {
+  color: rgba(90, 75, 73, 0.4);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+body header div .search-input input::placeholder {
+  color: rgba(90, 75, 73, 0.4);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+body header div .search-input input:focus {
+  border: 1px solid #FF7C76;
+}
+
+body header div .search-input button {
+  position: absolute;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  background: none;
+  border: none;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 0;
+  cursor: pointer;
+}
+
+body header div .search-input button:hover, body header div .search-input button:focus {
+  background: rgba(255, 124, 118, 0.4);
+}
+
+body header .user-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0;
+}
+
+body header .user-section .shopping-bag {
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 124, 118, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .user-section .profile {
+  margin: 0 12px 0 27px;
+  font-size: 0;
+}
+/*# sourceMappingURL=main.css.map */

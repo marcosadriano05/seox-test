@@ -1,0 +1,122 @@
+$cor-txt: #5A4B49;
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Archivo', sans-serif;
+
+  header {
+    height: 75px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: #FFFFFF;
+
+    .text {
+      color: $cor-txt;
+      font-weight: 400;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 27px;
+    
+        .logo {
+          font-size: 24px;
+          font-weight: 700;
+          color: #FF7C76;
+        }
+      }
+  
+      .search-input {
+        position: relative;
+  
+        input {
+          width: 417px;
+          height: 40px;
+          padding: 0 42px 0 21px;
+          border: 1px solid rgba(193, 139, 134, 0.2);
+          border-radius: 20px;
+          outline: none;
+          font-weight: 400;
+          font-size: 14px;
+  
+          &::placeholder {
+            color:rgba(90, 75, 73, 0.4);
+            font-weight: 400;
+            font-size: 14px;
+          }
+  
+          &:focus {
+            border: 1px solid #FF7C76;
+          }
+        }
+  
+        button {
+          position: absolute;
+          right: 0;
+          height: 40px;
+          width: 40px;
+          background: none;
+          border: none;
+          border-radius: 50%;
+          padding: 5px;
+          font-size: 0;
+          cursor: pointer;
+  
+          &:hover, &:focus {
+            background: rgba(255, 124, 118, 0.4);
+          }
+        }
+      }
+    }
+
+    .user-section {
+      display: flex;
+      gap: 0;
+
+      .shopping-bag {
+        font-size: 0;
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 50%;
+        background: rgba(255, 124, 118, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .profile {
+        margin: 0 12px 0 27px;
+        font-size: 0;
+      }
+    }
+  }
+}
