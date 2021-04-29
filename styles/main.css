@@ -275,7 +275,6 @@ body main .purchases-open {
   left: 473px;
   width: 808px;
   height: 582px;
-  padding: 34px 26px;
   background: #FFFFFF;
   border: 1px solid rgba(90, 75, 73, 0.1);
   border-radius: 4px;
@@ -289,7 +288,8 @@ body main .purchases-open > span {
 }
 
 body main .purchases-open .initial-info {
-  height: 50px;
+  height: auto;
+  padding: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,7 +299,6 @@ body main .purchases-open .initial-info {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 1px solid black;
 }
 
 body main .purchases-open .initial-info .status {
@@ -375,6 +374,12 @@ body main .purchases-open .initial-info .price {
 
 body main .purchases-open .initial-info .price > span {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 39px;
   width: 31px;
   height: 31px;
@@ -386,10 +391,270 @@ body main .purchases-open .initial-info .price > span {
 body main .purchases-open .initial-info .price > span::after {
   content: '';
   position: absolute;
+  top: 0;
+  left: 50%;
   width: 31px;
   height: 31px;
   background: #000000;
   border-radius: 50%;
   border: 2px solid #FFFFFF;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+body main .purchases-open .initial-info .price div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 14px;
+  color: #5A4B49;
+}
+
+body main .purchases-open .initial-info .price div > span:last-child {
+  color: #AEABAA;
+}
+
+body main .purchases-open .initial-info button {
+  height: 50px;
+  padding: 0 40px;
+  font-size: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(247, 246, 246, 0.6);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+body main .purchases-open .initial-info button:hover {
+  background: #f7f6f6;
+}
+
+body main .purchases-open .initial-info button span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5A4B49;
+}
+
+body main .purchases-open .initial-info button img {
+  margin-left: 16px;
+}
+
+body main .purchases-open .shipping {
+  height: 80px;
+  margin: 0 25px;
+  padding: 0 25px;
+  background: rgba(250, 250, 250, 0.5);
+  border: 1px solid rgba(239, 237, 237, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .purchases-open .shipping div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5A4B49;
+}
+
+body main .purchases-open .shipping div:nth-child(4) > span:last-child {
+  color: #82C91E;
+}
+
+body main .purchases-open .shipping div > span:last-child {
+  color: #AEABAA;
+}
+
+body main .purchases-open .shipping div > span:last-child span {
+  margin-left: 10px;
+  color: #5A4B49;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border: 1px solid #EFEDED;
+  border-radius: 4px;
+}
+
+body main .purchases-open .shipping button {
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  background: #FCFCFC;
+  border: 1px solid #EFEDED;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body main .purchases-open .shipping button:hover {
+  background: #f5f5f5;
+}
+
+body main .purchases-open .progress {
+  position: relative;
+  height: 150px;
+  margin: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .purchases-open .progress div {
+  width: 70px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body main .purchases-open .progress div span:first-child {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #82C91E;
+  z-index: 2;
+}
+
+body main .purchases-open .progress div span:nth-child(2) {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #AEABAA;
+}
+
+body main .purchases-open .progress div span:last-child {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+  color: #5A4B49;
+}
+
+body main .purchases-open .progress div:last-child span:first-child {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #82C91E;
+  font-size: 0;
+  border-radius: 8px;
+}
+
+body main .purchases-open .progress div:last-child span:nth-child(2) {
+  margin-top: 15px;
+}
+
+body main .purchases-open .progress::before {
+  position: absolute;
+  top: 68px;
+  left: 35px;
+  content: '';
+  width: 90%;
+  height: 1px;
+  border: 1px solid #82C91E;
+  z-index: 1;
+}
+
+body main .purchases-open .product {
+  margin: 0 25px;
+  padding: 25px 0;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .purchases-open .product > span:first-child {
+  margin-right: 20px;
+  width: 72px;
+  height: 72px;
+  background: #000000;
+  border-radius: 8px;
+}
+
+body main .purchases-open .product div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .purchases-open .product div > span:first-child {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5A4B49;
+}
+
+body main .purchases-open .product div > span:nth-child(2) {
+  font-size: 14px;
+  font-weight: 400;
+  color: #AEABAA;
+}
+
+body main .purchases-open .product div div {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5A4B49;
 }
 /*# sourceMappingURL=main.css.map */
