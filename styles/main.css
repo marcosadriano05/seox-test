@@ -268,4 +268,128 @@ body main .sidebar nav a:hover {
 body main .sidebar nav a img {
   margin-right: 20px;
 }
+
+body main .purchases-open {
+  position: absolute;
+  top: 286px;
+  left: 473px;
+  width: 808px;
+  height: 582px;
+  padding: 34px 26px;
+  background: #FFFFFF;
+  border: 1px solid rgba(90, 75, 73, 0.1);
+  border-radius: 4px;
+}
+
+body main .purchases-open > span {
+  position: absolute;
+  top: -50px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+body main .purchases-open .initial-info {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid black;
+}
+
+body main .purchases-open .initial-info .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .purchases-open .initial-info .status > span {
+  margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #82C91E;
+  font-size: 0;
+  border-radius: 8px;
+}
+
+body main .purchases-open .initial-info .status .purchase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  color: #82C91E;
+}
+
+body main .purchases-open .initial-info .status .purchase span {
+  margin-bottom: 3px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5A4B49;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .purchases-open .initial-info .status .purchase span img {
+  height: 14px;
+  margin-right: 10px;
+}
+
+body main .purchases-open .initial-info .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .purchases-open .initial-info .price > span {
+  position: relative;
+  margin-right: 39px;
+  width: 31px;
+  height: 31px;
+  background: #000000;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+}
+
+body main .purchases-open .initial-info .price > span::after {
+  content: '';
+  position: absolute;
+  width: 31px;
+  height: 31px;
+  background: #000000;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+}
 /*# sourceMappingURL=main.css.map */
