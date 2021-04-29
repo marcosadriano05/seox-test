@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  text-decoration: none;
 }
 
 .sr-only {
@@ -18,6 +19,7 @@
 }
 
 body {
+  position: relative;
   width: 100%;
   min-height: 100vh;
   font-family: 'Archivo', sans-serif;
@@ -160,5 +162,110 @@ body header .user-section .shopping-bag {
 body header .user-section .profile {
   margin: 0 12px 0 27px;
   font-size: 0;
+}
+
+body main {
+  position: relative;
+}
+
+body main .sidebar {
+  position: absolute;
+  top: 58px;
+  left: 130px;
+  background: #FFFFFF;
+  width: 310px;
+  height: 536px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+  padding: 17px 23px;
+}
+
+body main .sidebar .sidebar-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 30px;
+}
+
+body main .sidebar .sidebar-profile div {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  padding-left: 5px;
+  border: none;
+  border-radius: 50%;
+  background: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .sidebar .sidebar-profile div .camera {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+
+body main .sidebar .sidebar-profile span {
+  margin-top: 18px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+body main .sidebar nav {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .sidebar nav a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  padding: 22px 16px;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #5A4B49;
+}
+
+body main .sidebar nav a:hover {
+  background: rgba(243, 232, 231, 0.5);
+}
+
+body main .sidebar nav a img {
+  margin-right: 20px;
 }
 /*# sourceMappingURL=main.css.map */
