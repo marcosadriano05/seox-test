@@ -610,19 +610,35 @@ body main .purchases-open .progress::before {
   z-index: 1;
 }
 
-body main .purchases-open .product {
+body main .purchases-open section .product {
   margin: 0 25px;
   padding: 25px 0;
-  border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-body main .purchases-open .product > span:first-child {
+body main .purchases-open section .product:nth-child(n+2) {
+  border-top: 1px solid black;
+}
+
+body main .purchases-open section .product span:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body main .purchases-open section .product span:first-child div:first-child {
   margin-right: 20px;
   width: 72px;
   height: 72px;
@@ -630,7 +646,7 @@ body main .purchases-open .product > span:first-child {
   border-radius: 8px;
 }
 
-body main .purchases-open .product div {
+body main .purchases-open section .product span:first-child div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -638,23 +654,71 @@ body main .purchases-open .product div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
-body main .purchases-open .product div > span:first-child {
+body main .purchases-open section .product span:first-child div > span:first-child {
   font-size: 14px;
   font-weight: 400;
   color: #5A4B49;
 }
 
-body main .purchases-open .product div > span:nth-child(2) {
+body main .purchases-open section .product span:first-child div > span:nth-child(2) {
   font-size: 14px;
   font-weight: 400;
   color: #AEABAA;
 }
 
-body main .purchases-open .product div div {
+body main .purchases-open section .product span:first-child div div {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 14px;
   font-weight: 400;
   color: #5A4B49;
+}
+
+body main .purchases-open section .product span:first-child div div span {
+  padding: 5px 12px;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #5A4B49;
+  border: 1px solid #EFEDED;
+  border-radius: 4px;
+}
+
+body main .purchases-open section .product span:first-child div div span:last-child {
+  color: #5A4B49;
+}
+
+body main .purchases-open section .product div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5A4B49;
+}
+
+body main .purchases-open section .product div:last-child img {
+  margin-right: 5px;
 }
 /*# sourceMappingURL=main.css.map */
