@@ -137,16 +137,16 @@ body {
   }
 
   main {
-    position: relative;
     min-height: 100vh;
+    display: flex;
+    flex-direction: row;
 
     .sidebar {
-      position: absolute;
-      top: 58px;
-      left: 130px; /* 130px*/
       background: #FFFFFF;
-      width: 310px;
+      min-width: 310px;
       height: 536px;
+      margin-top: 58px;
+      margin-left: 120px;
       border-radius: 4px;
       box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
       padding: 17px 23px;
@@ -215,9 +215,8 @@ body {
     }
 
     & > section {
-      position: absolute;
-      top: 286px;
-      left: 473px;
+      margin-top: 286px;
+      margin-left: 30px;
 
       .purchases-open {
         width: 808px;
@@ -247,6 +246,7 @@ body {
             display: flex;
             flex-direction: row;
             align-items: center;
+            width: 270px;
   
             & > span {
               margin-right: 20px;
@@ -565,6 +565,7 @@ body {
             display: flex;
             flex-direction: row;
             align-items: center;
+            width: 270px;
   
             & > span {
               margin-right: 20px;
@@ -670,6 +671,7 @@ body {
             display: flex;
             flex-direction: row;
             align-items: center;
+            width: 270px;
   
             & > span {
               margin-right: 20px;
@@ -775,6 +777,7 @@ body {
             display: flex;
             flex-direction: row;
             align-items: center;
+            width: 270px;
   
             & > span {
               margin-right: 20px;
@@ -893,6 +896,7 @@ body {
             display: flex;
             flex-direction: row;
             align-items: center;
+            width: 270px;
   
             & > span {
               margin-right: 20px;
@@ -1025,6 +1029,7 @@ body {
             display: flex;
             flex-direction: row;
             align-items: center;
+            width: 270px;
   
             & > span {
               margin-right: 20px;
@@ -1143,11 +1148,67 @@ body {
   }
 
   footer {
-    position: static;
+    margin-top: 89px;
     height: 252px;
     width: 100%;
-    margin-top: 900px;
+    padding: 60px 200px;
     background: #F8F9FA;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+
+    & > section:first-child {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      & > div:first-child {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.6);
+
+        & > div {
+          display: flex;
+          flex-direction: row;
+          margin-top: 14px;
+
+          img:nth-child(n+2) {
+            margin-left: 8px;
+          }
+
+          div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            padding: 5px;
+            background: #FFFFFF;
+
+            &:nth-child(n+2) {
+              margin-left: 8px;
+            }
+          }
+        }
+      }
+
+      & > div:last-child {
+        display: flex;
+        flex-direction: row;
+
+        img:nth-child(n+2) {
+          margin-left: 46px;
+        }
+      }
+    }
+
+    & > section:last-child {
+      margin-top: 32px;
+      font-size: 12px;
+      font-weight: 400;
+      color: #000000;
+    }
   }
 }

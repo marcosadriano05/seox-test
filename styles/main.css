@@ -179,18 +179,22 @@ body header .user-section .profile {
 }
 
 body main {
-  position: relative;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 body main .sidebar {
-  position: absolute;
-  top: 58px;
-  left: 130px;
-  /* 130px*/
   background: #FFFFFF;
-  width: 310px;
+  min-width: 310px;
   height: 536px;
+  margin-top: 58px;
+  margin-left: 120px;
   border-radius: 4px;
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
@@ -286,9 +290,8 @@ body main .sidebar nav a img {
 }
 
 body main > section {
-  position: absolute;
-  top: 286px;
-  left: 473px;
+  margin-top: 286px;
+  margin-left: 30px;
   /* Segund0 pedido */
   /* Terceiro pedido */
   /* Quarto pedido */
@@ -339,6 +342,7 @@ body main > section .purchases-open .initial-info-open .status {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 270px;
 }
 
 body main > section .purchases-open .initial-info-open .status > span {
@@ -779,6 +783,7 @@ body main > section section:nth-child(2) > div .status {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 270px;
 }
 
 body main > section section:nth-child(2) > div .status > span {
@@ -939,6 +944,7 @@ body main > section section:nth-child(3) > div .status {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 270px;
 }
 
 body main > section section:nth-child(3) > div .status > span {
@@ -1099,6 +1105,7 @@ body main > section section:nth-child(4) > div .status {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 270px;
 }
 
 body main > section section:nth-child(4) > div .status > span {
@@ -1273,6 +1280,7 @@ body main > section section:nth-child(5) > div .status {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 270px;
 }
 
 body main > section section:nth-child(5) > div .status > span {
@@ -1461,6 +1469,7 @@ body main > section section:nth-child(6) > div .status {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 270px;
 }
 
 body main > section section:nth-child(6) > div .status > span {
@@ -1621,11 +1630,102 @@ body main > section section:nth-child(6) > div button img {
 }
 
 body footer {
-  position: static;
+  margin-top: 89px;
   height: 252px;
   width: 100%;
-  margin-top: 900px;
+  padding: 60px 200px;
   background: #F8F9FA;
   z-index: 1000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body footer > section:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body footer > section:first-child > div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+body footer > section:first-child > div:first-child > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 14px;
+}
+
+body footer > section:first-child > div:first-child > div img:nth-child(n+2) {
+  margin-left: 8px;
+}
+
+body footer > section:first-child > div:first-child > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 36px;
+  padding: 5px;
+  background: #FFFFFF;
+}
+
+body footer > section:first-child > div:first-child > div div:nth-child(n+2) {
+  margin-left: 8px;
+}
+
+body footer > section:first-child > div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body footer > section:first-child > div:last-child img:nth-child(n+2) {
+  margin-left: 46px;
+}
+
+body footer > section:last-child {
+  margin-top: 32px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
 }
 /*# sourceMappingURL=main.css.map */
