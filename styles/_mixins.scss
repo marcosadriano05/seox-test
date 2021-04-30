@@ -1,4 +1,4 @@
-@mixin status {
+@mixin status-delivered {
   width: 50px;
   height: 50px;
   display: flex;
@@ -7,4 +7,29 @@
   background: #82C91E;
   font-size: 0;
   border-radius: 8px;
+}
+
+@mixin status-on-the-way {
+  @include status-delivered;
+  background: #4C6EF5;
+}
+
+@mixin status-separate {
+  @include status-delivered;
+  background: #7950F2;
+}
+
+@mixin status-aproved {
+  @include status-delivered;
+  background: #40C057;
+}
+
+@mixin status-received {
+  @include status-delivered;
+  background: #20C997;
+}
+
+@mixin status-canceled {
+  @include status-delivered;
+  background: #FA5252;
 }
