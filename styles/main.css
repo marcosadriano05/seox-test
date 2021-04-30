@@ -23,11 +23,24 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: 'Archivo', sans-serif;
+  overflow-x: hidden;
+}
+
+body::before {
+  position: absolute;
+  content: '';
+  top: -5%;
+  left: -50%;
+  width: 200%;
+  height: 600px;
+  background: #FA5252;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+  z-index: -1;
 }
 
 body header {
   height: 75px;
-  border-bottom: 1px solid #ccc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,6 +51,7 @@ body header {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   background: #FFFFFF;
+  z-index: 1000;
 }
 
 body header .text {
@@ -166,12 +180,14 @@ body header .user-section .profile {
 
 body main {
   position: relative;
+  min-height: 100vh;
 }
 
 body main .sidebar {
   position: absolute;
   top: 58px;
   left: 130px;
+  /* 130px*/
   background: #FFFFFF;
   width: 310px;
   height: 536px;
@@ -293,6 +309,7 @@ body main > section .purchases-open > span {
   top: -50px;
   font-size: 28px;
   font-weight: 500;
+  color: white;
 }
 
 body main > section .purchases-open .initial-info-open {
@@ -1601,5 +1618,14 @@ body main > section section:nth-child(6) > div button img {
   margin-left: 16px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+body footer {
+  position: static;
+  height: 252px;
+  width: 100%;
+  margin-top: 900px;
+  background: #F8F9FA;
+  z-index: 1000;
 }
 /*# sourceMappingURL=main.css.map */

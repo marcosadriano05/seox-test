@@ -25,14 +25,27 @@ body {
   width: 100%;
   min-height: 100vh;
   font-family: 'Archivo', sans-serif;
+  overflow-x: hidden;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: -5%;
+    left: -50%;
+    width: 200%;
+    height: 600px;
+    background: #FA5252;
+    transform: rotate(10deg);
+    z-index: -1;
+  }
 
   header {
     height: 75px;
-    border-bottom: 1px solid #ccc;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     background: #FFFFFF;
+    z-index: 1000;
 
     .text {
       color: $cor-txt;
@@ -125,11 +138,12 @@ body {
 
   main {
     position: relative;
+    min-height: 100vh;
 
     .sidebar {
       position: absolute;
       top: 58px;
-      left: 130px;
+      left: 130px; /* 130px*/
       background: #FFFFFF;
       width: 310px;
       height: 536px;
@@ -217,6 +231,7 @@ body {
           top: -50px;
           font-size: 28px;
           font-weight: 500;
+          color: white;
         }
   
         .initial-info-open {
@@ -1125,5 +1140,14 @@ body {
         }
       }
     }
+  }
+
+  footer {
+    position: static;
+    height: 252px;
+    width: 100%;
+    margin-top: 900px;
+    background: #F8F9FA;
+    z-index: 1000;
   }
 }
