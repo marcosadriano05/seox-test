@@ -411,6 +411,7 @@ body {
           justify-content: space-between;
   
           div {
+            position: relative;
             width: 70px;
             height: 100%;
             display: flex;
@@ -419,11 +420,14 @@ body {
             justify-content: flex-end;
   
             span:first-child {
+              position: absolute;
+              top: 50%;
               width: 12px;
               height: 12px;
               border-radius: 50%;
               background: #82C91E;
               z-index: 2;
+              transform: translateY(-50%);
             }
   
             span:nth-child(2) {
@@ -454,7 +458,7 @@ body {
   
           &::before {
             position: absolute;
-            top: 68px;
+            top: 50%;
             left: 35px;
             content: '';
             width: 90%;
