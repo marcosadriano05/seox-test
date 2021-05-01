@@ -13,6 +13,14 @@
 
   &.open {
     height: max-content;
+
+    div {
+      .details {
+        img {
+          transform: rotate(0deg);
+        }
+      }
+    }
   }
 
   & > div {
@@ -344,6 +352,14 @@
 
   &.open {
     height: max-content;
+
+    div {
+      .details {
+        img {
+          transform: rotate(0deg);
+        }
+      }
+    }
   }
 
   & > div {
@@ -694,6 +710,14 @@
 
   &.open {
     height: max-content;
+
+    div {
+      .details {
+        img {
+          transform: rotate(0deg);
+        }
+      }
+    }
   }
 
   & > div {

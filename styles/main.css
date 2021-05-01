@@ -333,6 +333,11 @@ body main > section article:nth-child(2).open {
   height: max-content;
 }
 
+body main > section article:nth-child(2).open div .details img {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 body main > section article:nth-child(2) > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -821,6 +826,11 @@ body main > section article:nth-child(3).open {
   height: max-content;
 }
 
+body main > section article:nth-child(3).open div .details img {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 body main > section article:nth-child(3) > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1289,6 +1299,11 @@ body main > section article:nth-child(4).open {
   height: max-content;
 }
 
+body main > section article:nth-child(4).open div .details img {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 body main > section article:nth-child(4) > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1755,6 +1770,11 @@ body main > section article:nth-child(5).open {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+}
+
+body main > section article:nth-child(5).open div .details img {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 body main > section article:nth-child(5) > div {
@@ -2243,6 +2263,11 @@ body main > section article:nth-child(6).open {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+}
+
+body main > section article:nth-child(6).open div .details img {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 body main > section article:nth-child(6) > div {
@@ -2745,6 +2770,11 @@ body main > section article:nth-child(7).open {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+}
+
+body main > section article:nth-child(7).open div .details img {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 body main > section article:nth-child(7) > div {
