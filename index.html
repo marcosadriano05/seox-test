@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/orders.js" defer type="text/javascript"></script>
   <title>Seox</title>
 </head>
 <body>
@@ -231,7 +232,7 @@
       </section>
   
       <!-- Segundo Pedido -->
-      <section class="purchases">
+      <section class="purchases" data-order="2">
         <div class="initial-info">
           <div class="status">
             <span>
@@ -261,16 +262,101 @@
             </div>
           </div>
           
-          <button type="button">
+          <button type="button" data-open-order>
             <span>Mais detalhes</span>
             <img src="public/arrow-up.svg">
           </button>
         </div>
+        
+        <div class="shipping">
+          <img src="public/shipping.svg">
+  
+          <div>
+            <span>Frete:</span>
+            <span>R$ 35,10 <span>via SEDEX</span></span>
+          </div>
+  
+          <div>
+            <span>Forma de pagamento:</span>
+            <span>Cartão de crédito</span>
+          </div>
+  
+          <div>
+            <span>Entregue dia:</span>
+            <span>09/fev</span>
+          </div>
+  
+          <button type="button">
+            <img src="public/plus.svg">
+          </button>
+        </div>
+  
+        <div class="progress">
+          <div>
+            <span></span>
+            <span>Pedido Recebido</span>
+            <span>03/fev 09:33</span>
+          </div>
+  
+          <div>
+            <span></span>
+            <span>Pagamento aprovado</span>
+            <span>03/fev 14:33</span>
+          </div>
+  
+          <div>
+            <span></span>
+            <span>Em separação</span>
+            <span>06/fev 09:13</span>
+          </div>
+  
+          <div>
+            <span></span>
+            <span>Em transporte</span>
+            <span>08/fev 21:45</span>
+          </div>
+  
+          <div>
+            <span>
+              <img src="public/check.svg">
+            </span>
+            <span>Pedido entregue</span>
+            <span>09/fev 00:00</span>
+          </div>
+        </div>
+  
+        <section>
+  
+          <div class="product">
+            
+            <span>
+              <div>
+                <span></span>
+              </div>
+  
+              <div>
+                <span>Elastique</span>
+                <span>R$ 540,00</span>
+                <div>
+                  01 unidade
+                  <span>Cor: Preto</span>
+                  <span>Tamanho: P</span>
+                </div>
+              </div>
+            </span>
+  
+            <div>
+              <img src="public/star.svg">
+              Avalie este produto
+            </div>
+          </div>
+        </section>
+        
       </section>
 
       <!-- Terceiro pedido -->
 
-      <section class="purchases">
+      <section class="purchases" data-order="3">
         <div class="initial-info">
           <div class="status">
             <span>
@@ -300,16 +386,101 @@
             </div>
           </div>
           
-          <button type="button">
+          <button type="button" data-open-order>
             <span>Mais detalhes</span>
             <img src="public/arrow-up.svg">
           </button>
         </div>
+
+        <div class="shipping">
+          <img src="public/shipping.svg">
+  
+          <div>
+            <span>Frete:</span>
+            <span>R$ 35,10 <span>via SEDEX</span></span>
+          </div>
+  
+          <div>
+            <span>Forma de pagamento:</span>
+            <span>Cartão de crédito</span>
+          </div>
+  
+          <div>
+            <span>Entregue dia:</span>
+            <span>09/fev</span>
+          </div>
+  
+          <button type="button">
+            <img src="public/plus.svg">
+          </button>
+        </div>
+  
+        <div class="progress">
+          <div>
+            <span></span>
+            <span>Pedido Recebido</span>
+            <span>03/fev 09:33</span>
+          </div>
+  
+          <div>
+            <span></span>
+            <span>Pagamento aprovado</span>
+            <span>03/fev 14:33</span>
+          </div>
+  
+          <div>
+            <span></span>
+            <span>Em separação</span>
+            <span>06/fev 09:13</span>
+          </div>
+  
+          <div>
+            <span></span>
+            <span>Em transporte</span>
+            <span>08/fev 21:45</span>
+          </div>
+  
+          <div>
+            <span>
+              <img src="public/check.svg">
+            </span>
+            <span>Pedido entregue</span>
+            <span>09/fev 00:00</span>
+          </div>
+        </div>
+  
+        <section>
+  
+          <div class="product">
+            
+            <span>
+              <div>
+                <span></span>
+              </div>
+  
+              <div>
+                <span>Elastique</span>
+                <span>R$ 540,00</span>
+                <div>
+                  01 unidade
+                  <span>Cor: Preto</span>
+                  <span>Tamanho: P</span>
+                </div>
+              </div>
+            </span>
+  
+            <div>
+              <img src="public/star.svg">
+              Avalie este produto
+            </div>
+          </div>
+
+        </section>
       </section>
 
       <!-- Quarto pedido -->
 
-      <section class="purchases">
+      <section class="purchases" data-order="4">
         <div class="initial-info">
           <div class="status">
             <span>
@@ -334,7 +505,7 @@
             </div>
           </div>
           
-          <button type="button">
+          <button type="button" data-open-order>
             <span>Mais detalhes</span>
             <img src="public/arrow-up.svg">
           </button>
@@ -343,7 +514,7 @@
 
       <!-- Quinto pedido -->
 
-      <section class="purchases">
+      <section class="purchases" data-order>
         <div class="initial-info">
           <div class="status">
             <span>
@@ -370,7 +541,7 @@
             </div>
           </div>
           
-          <button type="button">
+          <button type="button" data-open-order="5">
             <span>Mais detalhes</span>
             <img src="public/arrow-up.svg">
           </button>
@@ -379,7 +550,7 @@
 
       <!-- Sexto pedido -->
 
-      <section class="purchases">
+      <section class="purchases" data-order="6">
         <div class="initial-info">
           <div class="status">
             <span>
@@ -406,7 +577,7 @@
             </div>
           </div>
           
-          <button type="button">
+          <button type="button" data-open-order>
             <span>Mais detalhes</span>
             <img src="public/arrow-up.svg">
           </button>

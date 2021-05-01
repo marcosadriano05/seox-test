@@ -4,6 +4,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .sr-only {
@@ -760,10 +762,31 @@ body main > section .purchases-open section .product div:last-child img {
   margin-right: 5px;
 }
 
-body main > section section:nth-child(2) > div {
-  height: auto;
+body main > section section:nth-child(2) {
   padding: 25px;
   margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  width: 808px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FFFFFF;
+  border: 1px solid rgba(90, 75, 73, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+body main > section section:nth-child(2).open {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+body main > section section:nth-child(2) > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,9 +796,6 @@ body main > section section:nth-child(2) > div {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #FFFFFF;
-  border: 1px solid rgba(90, 75, 73, 0.1);
-  border-radius: 4px;
 }
 
 body main > section section:nth-child(2) > div .status {
@@ -920,10 +940,15 @@ body main > section section:nth-child(2) > div button img {
           transform: rotate(180deg);
 }
 
-body main > section section:nth-child(3) > div {
-  height: auto;
-  padding: 25px;
-  margin-top: 20px;
+body main > section section:nth-child(2) .shipping {
+  height: 80px;
+  padding: 0 25px;
+  margin-top: 25px;
+  background: rgba(250, 250, 250, 0.5);
+  border: 1px solid rgba(239, 237, 237, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -933,9 +958,295 @@ body main > section section:nth-child(3) > div {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+body main > section section:nth-child(2) .shipping div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5A4B49;
+}
+
+body main > section section:nth-child(2) .shipping div:nth-child(4) > span:last-child {
+  color: #82C91E;
+}
+
+body main > section section:nth-child(2) .shipping div > span:last-child {
+  color: #AEABAA;
+}
+
+body main > section section:nth-child(2) .shipping div > span:last-child span {
+  margin-left: 10px;
+  color: #5A4B49;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border: 1px solid #EFEDED;
+  border-radius: 4px;
+}
+
+body main > section section:nth-child(2) .shipping button {
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  background: #FCFCFC;
+  border: 1px solid #EFEDED;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body main > section section:nth-child(2) .shipping button:hover {
+  background: #f5f5f5;
+}
+
+body main > section section:nth-child(2) .progress {
+  position: relative;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main > section section:nth-child(2) .progress div {
+  position: relative;
+  width: 70px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body main > section section:nth-child(2) .progress div span:first-child {
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #82C91E;
+  z-index: 2;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body main > section section:nth-child(2) .progress div span:nth-child(2) {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #AEABAA;
+}
+
+body main > section section:nth-child(2) .progress div span:last-child {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+  color: #5A4B49;
+}
+
+body main > section section:nth-child(2) .progress div:last-child span:first-child {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #82C91E;
+  font-size: 0;
+  border-radius: 8px;
+}
+
+body main > section section:nth-child(2) .progress div:last-child span:nth-child(2) {
+  margin-top: 15px;
+}
+
+body main > section section:nth-child(2) .progress::before {
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  content: '';
+  width: 90%;
+  height: 1px;
+  border: 1px solid #82C91E;
+  z-index: 1;
+}
+
+body main > section section:nth-child(2) section .product {
+  margin: 0;
+  padding: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main > section section:nth-child(2) section .product:nth-child(n+2) {
+  border-top: 1px solid #F6F5F5;
+}
+
+body main > section section:nth-child(2) section .product span:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body main > section section:nth-child(2) section .product span:first-child div:first-child {
+  margin-right: 20px;
+  width: 72px;
+  height: 72px;
+  background: #000000;
+  border-radius: 8px;
+}
+
+body main > section section:nth-child(2) section .product span:first-child div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body main > section section:nth-child(2) section .product span:first-child div > span:first-child {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5A4B49;
+}
+
+body main > section section:nth-child(2) section .product span:first-child div > span:nth-child(2) {
+  font-size: 14px;
+  font-weight: 400;
+  color: #AEABAA;
+}
+
+body main > section section:nth-child(2) section .product span:first-child div div {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5A4B49;
+}
+
+body main > section section:nth-child(2) section .product span:first-child div div span {
+  padding: 5px 12px;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #5A4B49;
+  border: 1px solid #EFEDED;
+  border-radius: 4px;
+}
+
+body main > section section:nth-child(2) section .product span:first-child div div span:last-child {
+  color: #5A4B49;
+}
+
+body main > section section:nth-child(2) section .product div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5A4B49;
+}
+
+body main > section section:nth-child(2) section .product div:last-child img {
+  margin-right: 5px;
+}
+
+body main > section section:nth-child(3) {
+  padding: 25px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  width: 808px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #FFFFFF;
   border: 1px solid rgba(90, 75, 73, 0.1);
   border-radius: 4px;
+  overflow: hidden;
+}
+
+body main > section section:nth-child(3).open {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+body main > section section:nth-child(3) > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body main > section section:nth-child(3) > div .status {
@@ -1078,6 +1389,279 @@ body main > section section:nth-child(3) > div button img {
   margin-left: 16px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+body main > section section:nth-child(3) .shipping {
+  height: 80px;
+  padding: 0 25px;
+  margin-top: 25px;
+  background: rgba(250, 250, 250, 0.5);
+  border: 1px solid rgba(239, 237, 237, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main > section section:nth-child(3) .shipping div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5A4B49;
+}
+
+body main > section section:nth-child(3) .shipping div:nth-child(4) > span:last-child {
+  color: #82C91E;
+}
+
+body main > section section:nth-child(3) .shipping div > span:last-child {
+  color: #AEABAA;
+}
+
+body main > section section:nth-child(3) .shipping div > span:last-child span {
+  margin-left: 10px;
+  color: #5A4B49;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border: 1px solid #EFEDED;
+  border-radius: 4px;
+}
+
+body main > section section:nth-child(3) .shipping button {
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  background: #FCFCFC;
+  border: 1px solid #EFEDED;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body main > section section:nth-child(3) .shipping button:hover {
+  background: #f5f5f5;
+}
+
+body main > section section:nth-child(3) .progress {
+  position: relative;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main > section section:nth-child(3) .progress div {
+  position: relative;
+  width: 70px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body main > section section:nth-child(3) .progress div span:first-child {
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #82C91E;
+  z-index: 2;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body main > section section:nth-child(3) .progress div span:nth-child(2) {
+  margin-top: 35px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: #AEABAA;
+}
+
+body main > section section:nth-child(3) .progress div span:last-child {
+  text-align: center;
+  font-size: 10px;
+  font-weight: 400;
+  color: #5A4B49;
+}
+
+body main > section section:nth-child(3) .progress div:last-child span:first-child {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #82C91E;
+  font-size: 0;
+  border-radius: 8px;
+}
+
+body main > section section:nth-child(3) .progress div:last-child span:nth-child(2) {
+  margin-top: 15px;
+}
+
+body main > section section:nth-child(3) .progress::before {
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  content: '';
+  width: 90%;
+  height: 1px;
+  border: 1px solid #82C91E;
+  z-index: 1;
+}
+
+body main > section section:nth-child(3) section .product {
+  margin: 0;
+  padding: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main > section section:nth-child(3) section .product:nth-child(n+2) {
+  border-top: 1px solid #F6F5F5;
+}
+
+body main > section section:nth-child(3) section .product span:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body main > section section:nth-child(3) section .product span:first-child div:first-child {
+  margin-right: 20px;
+  width: 72px;
+  height: 72px;
+  background: #000000;
+  border-radius: 8px;
+}
+
+body main > section section:nth-child(3) section .product span:first-child div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body main > section section:nth-child(3) section .product span:first-child div > span:first-child {
+  font-size: 14px;
+  font-weight: 400;
+  color: #5A4B49;
+}
+
+body main > section section:nth-child(3) section .product span:first-child div > span:nth-child(2) {
+  font-size: 14px;
+  font-weight: 400;
+  color: #AEABAA;
+}
+
+body main > section section:nth-child(3) section .product span:first-child div div {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5A4B49;
+}
+
+body main > section section:nth-child(3) section .product span:first-child div div span {
+  padding: 5px 12px;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #5A4B49;
+  border: 1px solid #EFEDED;
+  border-radius: 4px;
+}
+
+body main > section section:nth-child(3) section .product span:first-child div div span:last-child {
+  color: #5A4B49;
+}
+
+body main > section section:nth-child(3) section .product div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #5A4B49;
+}
+
+body main > section section:nth-child(3) section .product div:last-child img {
+  margin-right: 5px;
 }
 
 body main > section section:nth-child(4) > div {
