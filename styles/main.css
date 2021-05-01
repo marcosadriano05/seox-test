@@ -290,6 +290,7 @@ body main .sidebar nav a img {
 }
 
 body main > section {
+  position: relative;
   margin-top: 286px;
   margin-left: 30px;
   /* Segund0 pedido */
