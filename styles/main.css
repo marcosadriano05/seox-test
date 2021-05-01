@@ -805,10 +805,9 @@ body main > section section:nth-child(2) > div .status > span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #82C91E;
+  background: #4C6EF5;
   font-size: 0;
   border-radius: 8px;
-  background: #4C6EF5;
 }
 
 body main > section section:nth-child(2) > div .status .purchase {
@@ -966,10 +965,9 @@ body main > section section:nth-child(3) > div .status > span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #82C91E;
+  background: #7950F2;
   font-size: 0;
   border-radius: 8px;
-  background: #7950F2;
 }
 
 body main > section section:nth-child(3) > div .status .purchase {
@@ -1127,10 +1125,9 @@ body main > section section:nth-child(4) > div .status > span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #82C91E;
+  background: #40C057;
   font-size: 0;
   border-radius: 8px;
-  background: #40C057;
 }
 
 body main > section section:nth-child(4) > div .status .purchase {
@@ -1302,10 +1299,9 @@ body main > section section:nth-child(5) > div .status > span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #82C91E;
+  background: #20C997;
   font-size: 0;
   border-radius: 8px;
-  background: #20C997;
 }
 
 body main > section section:nth-child(5) > div .status .purchase {
@@ -1491,10 +1487,9 @@ body main > section section:nth-child(6) > div .status > span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #82C91E;
+  background: #FA5252;
   font-size: 0;
   border-radius: 8px;
-  background: #FA5252;
 }
 
 body main > section section:nth-child(6) > div .status .purchase {
