@@ -230,7 +230,7 @@ body {
 
       /* Primeiro pedido */
       article:nth-child(2) {
-        @include order-two-products($cor-pedido-entregue);
+        @include order-two-products($cor-pedido-entregue, $order-delivered);
       }
 
       /* Segund0 pedido */
@@ -245,17 +245,17 @@ body {
 
       /* Quarto pedido */
       article:nth-child(5) {
-        @include order-two-products($cor-pedido-aprovado);
+        @include order-two-products($cor-pedido-aprovado, $order-aproved);
       }
 
       /* Quinto pedido */
       article:nth-child(6) {
-        @include order-three-or-more-products($cor-pedido-recebido);
+        @include order-three-or-more-products($cor-pedido-recebido, $order-received);
       }
 
       /* Sexto pedido */
       article:nth-child(7) {
-        @include order-three-or-more-products($cor-pedido-cancelado);
+        @include order-three-or-more-products($cor-pedido-cancelado, $order-canceled);
       }
     }
   }

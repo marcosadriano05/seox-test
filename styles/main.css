@@ -583,6 +583,29 @@ body main > section article:nth-child(2) .shipping button:hover {
   background: #f5f5f5;
 }
 
+body main > section article:nth-child(2) .shipping button {
+  position: relative;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  background: #FCFCFC;
+  border: 1px solid #EFEDED;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body main > section article:nth-child(2) .shipping button img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body main > section article:nth-child(2) .shipping button:hover {
+  background: #f5f5f5;
+}
+
 body main > section article:nth-child(2) .progress {
   position: relative;
   height: 150px;
@@ -622,7 +645,7 @@ body main > section article:nth-child(2) .progress div span:first-child {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #82C91E;
+  background: #D7D5D4;
   z-index: 2;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -643,7 +666,22 @@ body main > section article:nth-child(2) .progress div span:last-child {
   color: #5A4B49;
 }
 
-body main > section article:nth-child(2) .progress div:last-child span:first-child {
+body main > section article:nth-child(2) .progress::before {
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  content: '';
+  width: 90%;
+  height: 1px;
+  border: 1px solid #EFEDED;
+  z-index: 1;
+}
+
+body main > section article:nth-child(2) .progress div span:first-child {
+  background: #82C91E;
+}
+
+body main > section article:nth-child(2) .progress div:nth-child(5) span:first-child {
   width: 50px;
   height: 50px;
   display: -webkit-box;
@@ -660,11 +698,11 @@ body main > section article:nth-child(2) .progress div:last-child span:first-chi
   border-radius: 8px;
 }
 
-body main > section article:nth-child(2) .progress div:last-child span:nth-child(2) {
+body main > section article:nth-child(2) .progress div:nth-child(5) span:nth-child(2) {
   margin-top: 15px;
 }
 
-body main > section article:nth-child(2) .progress::before {
+body main > section article:nth-child(2) .progress::after {
   position: absolute;
   top: 50%;
   left: 35px;
@@ -1547,7 +1585,7 @@ body main > section article:nth-child(4) .shipping div > span:nth-child(2) span 
   font-size: 12px;
   font-weight: 500;
   color: #5A4B49;
-  border: 1px solid #EFEDED;
+  border: 1px solid #dfd5ff;
   border-radius: 4px;
 }
 
@@ -2069,22 +2107,48 @@ body main > section article:nth-child(5) .shipping div {
   color: #5A4B49;
 }
 
-body main > section article:nth-child(5) .shipping div:nth-child(4) > span:last-child {
-  color: #82C91E;
-}
-
-body main > section article:nth-child(5) .shipping div > span:last-child {
+body main > section article:nth-child(5) .shipping div > span:nth-child(2) {
   color: #AEABAA;
 }
 
-body main > section article:nth-child(5) .shipping div > span:last-child span {
+body main > section article:nth-child(5) .shipping div > span:nth-child(2) span {
+  padding: 5px 10px;
   margin-left: 10px;
-  color: #5A4B49;
   font-size: 12px;
   font-weight: 500;
-  padding: 5px 10px;
+  color: #5A4B49;
   border: 1px solid #EFEDED;
   border-radius: 4px;
+}
+
+body main > section article:nth-child(5) .shipping div:nth-child(4) {
+  height: 50px;
+  width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #eefff1;
+  border-radius: 4px;
+}
+
+body main > section article:nth-child(5) .shipping div:nth-child(4) img, body main > section article:nth-child(5) .shipping div:nth-child(4) svg {
+  margin-right: 15px;
+}
+
+body main > section article:nth-child(5) .shipping div:nth-child(4) span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #40C057;
 }
 
 body main > section article:nth-child(5) .shipping button {
@@ -2149,7 +2213,7 @@ body main > section article:nth-child(5) .progress div span:first-child {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #82C91E;
+  background: #D7D5D4;
   z-index: 2;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -2170,7 +2234,22 @@ body main > section article:nth-child(5) .progress div span:last-child {
   color: #5A4B49;
 }
 
-body main > section article:nth-child(5) .progress div:last-child span:first-child {
+body main > section article:nth-child(5) .progress::before {
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  content: '';
+  width: 90%;
+  height: 1px;
+  border: 1px solid #EFEDED;
+  z-index: 1;
+}
+
+body main > section article:nth-child(5) .progress div:nth-child(-n+2) span:first-child {
+  background: #40C057;
+}
+
+body main > section article:nth-child(5) .progress div:nth-child(2) span:first-child {
   width: 50px;
   height: 50px;
   display: -webkit-box;
@@ -2182,23 +2261,23 @@ body main > section article:nth-child(5) .progress div:last-child span:first-chi
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #82C91E;
+  background: #40C057;
   font-size: 0;
   border-radius: 8px;
 }
 
-body main > section article:nth-child(5) .progress div:last-child span:nth-child(2) {
+body main > section article:nth-child(5) .progress div:nth-child(2) span:nth-child(2) {
   margin-top: 15px;
 }
 
-body main > section article:nth-child(5) .progress::before {
+body main > section article:nth-child(5) .progress::after {
   position: absolute;
   top: 50%;
   left: 35px;
   content: '';
-  width: 90%;
+  width: 25%;
   height: 1px;
-  border: 1px solid #82C91E;
+  border: 1px solid #40C057;
   z-index: 1;
 }
 
@@ -2574,22 +2653,48 @@ body main > section article:nth-child(6) .shipping div {
   color: #5A4B49;
 }
 
-body main > section article:nth-child(6) .shipping div:nth-child(4) > span:last-child {
-  color: #82C91E;
-}
-
-body main > section article:nth-child(6) .shipping div > span:last-child {
+body main > section article:nth-child(6) .shipping div > span:nth-child(2) {
   color: #AEABAA;
 }
 
-body main > section article:nth-child(6) .shipping div > span:last-child span {
+body main > section article:nth-child(6) .shipping div > span:nth-child(2) span {
+  padding: 5px 10px;
   margin-left: 10px;
-  color: #5A4B49;
   font-size: 12px;
   font-weight: 500;
-  padding: 5px 10px;
+  color: #5A4B49;
   border: 1px solid #EFEDED;
   border-radius: 4px;
+}
+
+body main > section article:nth-child(6) .shipping div:nth-child(4) {
+  height: 50px;
+  width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #e6fff7;
+  border-radius: 4px;
+}
+
+body main > section article:nth-child(6) .shipping div:nth-child(4) img, body main > section article:nth-child(6) .shipping div:nth-child(4) svg {
+  margin-right: 15px;
+}
+
+body main > section article:nth-child(6) .shipping div:nth-child(4) span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #20C997;
 }
 
 body main > section article:nth-child(6) .shipping button {
@@ -2654,7 +2759,7 @@ body main > section article:nth-child(6) .progress div span:first-child {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #82C91E;
+  background: #D7D5D4;
   z-index: 2;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -2675,7 +2780,22 @@ body main > section article:nth-child(6) .progress div span:last-child {
   color: #5A4B49;
 }
 
-body main > section article:nth-child(6) .progress div:last-child span:first-child {
+body main > section article:nth-child(6) .progress::before {
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  content: '';
+  width: 90%;
+  height: 1px;
+  border: 1px solid #EFEDED;
+  z-index: 1;
+}
+
+body main > section article:nth-child(6) .progress div:nth-child(-n+1) span:first-child {
+  background: #20C997;
+}
+
+body main > section article:nth-child(6) .progress div:nth-child(1) span:first-child {
   width: 50px;
   height: 50px;
   display: -webkit-box;
@@ -2687,23 +2807,23 @@ body main > section article:nth-child(6) .progress div:last-child span:first-chi
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #82C91E;
+  background: #20C997;
   font-size: 0;
   border-radius: 8px;
 }
 
-body main > section article:nth-child(6) .progress div:last-child span:nth-child(2) {
+body main > section article:nth-child(6) .progress div:nth-child(1) span:nth-child(2) {
   margin-top: 15px;
 }
 
-body main > section article:nth-child(6) .progress::before {
+body main > section article:nth-child(6) .progress::after {
   position: absolute;
   top: 50%;
   left: 35px;
   content: '';
-  width: 90%;
+  width: 0%;
   height: 1px;
-  border: 1px solid #82C91E;
+  border: 1px solid #20C997;
   z-index: 1;
 }
 
@@ -3079,22 +3199,48 @@ body main > section article:nth-child(7) .shipping div {
   color: #5A4B49;
 }
 
-body main > section article:nth-child(7) .shipping div:nth-child(4) > span:last-child {
-  color: #82C91E;
-}
-
-body main > section article:nth-child(7) .shipping div > span:last-child {
+body main > section article:nth-child(7) .shipping div > span:nth-child(2) {
   color: #AEABAA;
 }
 
-body main > section article:nth-child(7) .shipping div > span:last-child span {
+body main > section article:nth-child(7) .shipping div > span:nth-child(2) span {
+  padding: 5px 10px;
   margin-left: 10px;
-  color: #5A4B49;
   font-size: 12px;
   font-weight: 500;
-  padding: 5px 10px;
+  color: #5A4B49;
   border: 1px solid #EFEDED;
   border-radius: 4px;
+}
+
+body main > section article:nth-child(7) .shipping div:nth-child(4) {
+  height: 50px;
+  width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fcd4d4;
+  border-radius: 4px;
+}
+
+body main > section article:nth-child(7) .shipping div:nth-child(4) img, body main > section article:nth-child(7) .shipping div:nth-child(4) svg {
+  margin-right: 15px;
+}
+
+body main > section article:nth-child(7) .shipping div:nth-child(4) span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #FA5252;
 }
 
 body main > section article:nth-child(7) .shipping button {
@@ -3159,7 +3305,7 @@ body main > section article:nth-child(7) .progress div span:first-child {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #82C91E;
+  background: #D7D5D4;
   z-index: 2;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -3180,27 +3326,6 @@ body main > section article:nth-child(7) .progress div span:last-child {
   color: #5A4B49;
 }
 
-body main > section article:nth-child(7) .progress div:last-child span:first-child {
-  width: 50px;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #82C91E;
-  font-size: 0;
-  border-radius: 8px;
-}
-
-body main > section article:nth-child(7) .progress div:last-child span:nth-child(2) {
-  margin-top: 15px;
-}
-
 body main > section article:nth-child(7) .progress::before {
   position: absolute;
   top: 50%;
@@ -3208,7 +3333,7 @@ body main > section article:nth-child(7) .progress::before {
   content: '';
   width: 90%;
   height: 1px;
-  border: 1px solid #82C91E;
+  border: 1px solid #EFEDED;
   z-index: 1;
 }
 
