@@ -737,6 +737,7 @@ body main > section article:nth-child(2) section .product span:first-child div {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  gap: 1px;
 }
 
 body main > section article:nth-child(2) section .product span:first-child div > span:first-child {
@@ -796,10 +797,7 @@ body main > section article:nth-child(2) section .product div:last-child {
   font-size: 14px;
   font-weight: 400;
   color: #5A4B49;
-}
-
-body main > section article:nth-child(2) section .product div:last-child img {
-  margin-right: 5px;
+  gap: 10px;
 }
 
 body main > section article:nth-child(3) {
@@ -1021,22 +1019,48 @@ body main > section article:nth-child(3) .shipping div {
   color: #5A4B49;
 }
 
-body main > section article:nth-child(3) .shipping div:nth-child(4) > span:last-child {
-  color: #82C91E;
-}
-
-body main > section article:nth-child(3) .shipping div > span:last-child {
+body main > section article:nth-child(3) .shipping div > span:nth-child(2) {
   color: #AEABAA;
 }
 
-body main > section article:nth-child(3) .shipping div > span:last-child span {
+body main > section article:nth-child(3) .shipping div > span:nth-child(2) span {
+  padding: 5px 10px;
   margin-left: 10px;
-  color: #5A4B49;
   font-size: 12px;
   font-weight: 500;
-  padding: 5px 10px;
+  color: #5A4B49;
   border: 1px solid #EFEDED;
   border-radius: 4px;
+}
+
+body main > section article:nth-child(3) .shipping div:nth-child(4) {
+  height: 50px;
+  width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #EDF0FE;
+  border-radius: 4px;
+}
+
+body main > section article:nth-child(3) .shipping div:nth-child(4) img, body main > section article:nth-child(3) .shipping div:nth-child(4) svg {
+  margin-right: 15px;
+}
+
+body main > section article:nth-child(3) .shipping div:nth-child(4) span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4C6EF5;
 }
 
 body main > section article:nth-child(3) .shipping button {
@@ -1101,7 +1125,7 @@ body main > section article:nth-child(3) .progress div span:first-child {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #82C91E;
+  background: #D7D5D4;
   z-index: 2;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1122,7 +1146,22 @@ body main > section article:nth-child(3) .progress div span:last-child {
   color: #5A4B49;
 }
 
-body main > section article:nth-child(3) .progress div:last-child span:first-child {
+body main > section article:nth-child(3) .progress::before {
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  content: '';
+  width: 90%;
+  height: 1px;
+  border: 1px solid #EFEDED;
+  z-index: 1;
+}
+
+body main > section article:nth-child(3) .progress div:nth-child(-n+4) span:first-child {
+  background: #4C6EF5;
+}
+
+body main > section article:nth-child(3) .progress div:nth-child(4) span:first-child {
   width: 50px;
   height: 50px;
   display: -webkit-box;
@@ -1134,23 +1173,23 @@ body main > section article:nth-child(3) .progress div:last-child span:first-chi
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #82C91E;
+  background: #4C6EF5;
   font-size: 0;
   border-radius: 8px;
 }
 
-body main > section article:nth-child(3) .progress div:last-child span:nth-child(2) {
+body main > section article:nth-child(3) .progress div:nth-child(4) span:nth-child(2) {
   margin-top: 15px;
 }
 
-body main > section article:nth-child(3) .progress::before {
+body main > section article:nth-child(3) .progress::after {
   position: absolute;
   top: 50%;
   left: 35px;
   content: '';
-  width: 90%;
+  width: 70%;
   height: 1px;
-  border: 1px solid #82C91E;
+  border: 1px solid #4C6EF5;
   z-index: 1;
 }
 
@@ -1216,6 +1255,7 @@ body main > section article:nth-child(3) section .product span:first-child div {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  gap: 1px;
 }
 
 body main > section article:nth-child(3) section .product span:first-child div > span:first-child {
@@ -1275,10 +1315,7 @@ body main > section article:nth-child(3) section .product div:last-child {
   font-size: 14px;
   font-weight: 400;
   color: #5A4B49;
-}
-
-body main > section article:nth-child(3) section .product div:last-child img {
-  margin-right: 5px;
+  gap: 10px;
 }
 
 body main > section article:nth-child(4) {
@@ -1500,22 +1537,48 @@ body main > section article:nth-child(4) .shipping div {
   color: #5A4B49;
 }
 
-body main > section article:nth-child(4) .shipping div:nth-child(4) > span:last-child {
-  color: #82C91E;
-}
-
-body main > section article:nth-child(4) .shipping div > span:last-child {
+body main > section article:nth-child(4) .shipping div > span:nth-child(2) {
   color: #AEABAA;
 }
 
-body main > section article:nth-child(4) .shipping div > span:last-child span {
+body main > section article:nth-child(4) .shipping div > span:nth-child(2) span {
+  padding: 5px 10px;
   margin-left: 10px;
-  color: #5A4B49;
   font-size: 12px;
   font-weight: 500;
-  padding: 5px 10px;
+  color: #5A4B49;
   border: 1px solid #EFEDED;
   border-radius: 4px;
+}
+
+body main > section article:nth-child(4) .shipping div:nth-child(4) {
+  height: 50px;
+  width: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #EDF0FE;
+  border-radius: 4px;
+}
+
+body main > section article:nth-child(4) .shipping div:nth-child(4) img, body main > section article:nth-child(4) .shipping div:nth-child(4) svg {
+  margin-right: 15px;
+}
+
+body main > section article:nth-child(4) .shipping div:nth-child(4) span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #7950F2;
 }
 
 body main > section article:nth-child(4) .shipping button {
@@ -1580,7 +1643,7 @@ body main > section article:nth-child(4) .progress div span:first-child {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #82C91E;
+  background: #D7D5D4;
   z-index: 2;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1601,7 +1664,22 @@ body main > section article:nth-child(4) .progress div span:last-child {
   color: #5A4B49;
 }
 
-body main > section article:nth-child(4) .progress div:last-child span:first-child {
+body main > section article:nth-child(4) .progress::before {
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  content: '';
+  width: 90%;
+  height: 1px;
+  border: 1px solid #EFEDED;
+  z-index: 1;
+}
+
+body main > section article:nth-child(4) .progress div:nth-child(-n+3) span:first-child {
+  background: #7950F2;
+}
+
+body main > section article:nth-child(4) .progress div:nth-child(3) span:first-child {
   width: 50px;
   height: 50px;
   display: -webkit-box;
@@ -1613,23 +1691,23 @@ body main > section article:nth-child(4) .progress div:last-child span:first-chi
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #82C91E;
+  background: #7950F2;
   font-size: 0;
   border-radius: 8px;
 }
 
-body main > section article:nth-child(4) .progress div:last-child span:nth-child(2) {
+body main > section article:nth-child(4) .progress div:nth-child(3) span:nth-child(2) {
   margin-top: 15px;
 }
 
-body main > section article:nth-child(4) .progress::before {
+body main > section article:nth-child(4) .progress::after {
   position: absolute;
   top: 50%;
   left: 35px;
   content: '';
-  width: 90%;
+  width: 45%;
   height: 1px;
-  border: 1px solid #82C91E;
+  border: 1px solid #7950F2;
   z-index: 1;
 }
 
@@ -1695,6 +1773,7 @@ body main > section article:nth-child(4) section .product span:first-child div {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  gap: 1px;
 }
 
 body main > section article:nth-child(4) section .product span:first-child div > span:first-child {
@@ -1754,10 +1833,7 @@ body main > section article:nth-child(4) section .product div:last-child {
   font-size: 14px;
   font-weight: 400;
   color: #5A4B49;
-}
-
-body main > section article:nth-child(4) section .product div:last-child img {
-  margin-right: 5px;
+  gap: 10px;
 }
 
 body main > section article:nth-child(5) {
@@ -2188,6 +2264,7 @@ body main > section article:nth-child(5) section .product span:first-child div {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  gap: 1px;
 }
 
 body main > section article:nth-child(5) section .product span:first-child div > span:first-child {
@@ -2247,10 +2324,7 @@ body main > section article:nth-child(5) section .product div:last-child {
   font-size: 14px;
   font-weight: 400;
   color: #5A4B49;
-}
-
-body main > section article:nth-child(5) section .product div:last-child img {
-  margin-right: 5px;
+  gap: 10px;
 }
 
 body main > section article:nth-child(6) {
@@ -2695,6 +2769,7 @@ body main > section article:nth-child(6) section .product span:first-child div {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  gap: 1px;
 }
 
 body main > section article:nth-child(6) section .product span:first-child div > span:first-child {
@@ -2754,10 +2829,7 @@ body main > section article:nth-child(6) section .product div:last-child {
   font-size: 14px;
   font-weight: 400;
   color: #5A4B49;
-}
-
-body main > section article:nth-child(6) section .product div:last-child img {
-  margin-right: 5px;
+  gap: 10px;
 }
 
 body main > section article:nth-child(7) {
@@ -3202,6 +3274,7 @@ body main > section article:nth-child(7) section .product span:first-child div {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  gap: 1px;
 }
 
 body main > section article:nth-child(7) section .product span:first-child div > span:first-child {
@@ -3261,10 +3334,7 @@ body main > section article:nth-child(7) section .product div:last-child {
   font-size: 14px;
   font-weight: 400;
   color: #5A4B49;
-}
-
-body main > section article:nth-child(7) section .product div:last-child img {
-  margin-right: 5px;
+  gap: 10px;
 }
 
 body footer {

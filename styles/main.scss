@@ -1,7 +1,7 @@
 @import '_variables';
 @import 'mixins/mixins-status';
 @import 'mixins/mixins-orders';
-@import 'mixins/mixins-products';
+@import 'mixins/mixins-orders-info';
 
 *, *::after, *::before {
   margin: 0;
@@ -235,12 +235,12 @@ body {
 
       /* Segund0 pedido */
       article:nth-child(3) {
-        @include order($cor-pedido-no-caminho);
+        @include order($cor-pedido-no-caminho, $order-on-the-way);
       }
 
       /* Terceiro pedido */
       article:nth-child(4) {
-        @include order($cor-pedido-separado);
+        @include order($cor-pedido-separado, $order-separated);
       }
 
       /* Quarto pedido */
