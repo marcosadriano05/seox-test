@@ -9,10 +9,9 @@
   border: 1px solid rgba(90, 75, 73, 0.1);
   border-radius: 4px;
   overflow: hidden;
-  
 
   &.open {
-    height: max-content;
+    height: fit-content;
 
     div {
       .details {
@@ -249,92 +248,7 @@
     }
   }
 
-  section {
-    width: 100%;
-    border: none;
-    margin: 0;
-    height: max-content;
-    padding: 25px 0 0;
-
-    .product {
-      display: flex;
-      align-items: center;
-      border: none;
-      justify-content: space-between;
-
-      &:nth-child(n+2) {
-        border-top: 1px solid #F6F5F5;
-      }
-
-      span:first-child {
-        display: flex;
-        flex-direction: row;
-        
-        div:first-child {
-          margin-right: 20px;
-          width: 72px;
-          height: 72px;
-          background: #000000;
-          border-radius: 8px;
-        }
-
-        div {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-
-          & > span:first-child {
-            font-size: 14px;
-            font-weight: 400;
-            color: $cor-txt;
-          }
-
-          & > span:nth-child(2) {
-            font-size: 14px;
-            font-weight: 400;
-            color: $cor-txt2;
-          }
-
-          div {
-            margin-top: 10px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            font-size: 14px;
-            font-weight: 400;
-            color: $cor-txt;
-
-            span {
-              padding: 5px 12px;
-              margin-left: 10px;
-              font-size: 12px;
-              font-weight: 500;
-              color: $cor-txt;
-              border: 1px solid #EFEDED;
-              border-radius: 4px;
-
-              &:last-child {
-                color: $cor-txt;
-              }
-            }
-          }
-        }
-      }
-
-      div:last-child {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: 14px;
-        font-weight: 400;
-        color: $cor-txt;
-
-        img {
-          margin-right: 5px;
-        }
-      }
-    }
-  }
+  @include products;
 }
 
 @mixin order-two-products($color) {
@@ -601,98 +515,7 @@
     }
   }
 
-  section {
-    width: 100%;
-    height: max-content;
-    border: none;
-    margin: 0;
-    padding: 0;
-    
-    .product {
-      padding: 25px 0;
-      display: flex;
-      align-items: center;
-      border: none;
-      justify-content: space-between;
-
-      &:nth-child(n+2) {
-        border-top: 1px solid #F6F5F5;
-      }
-
-      &:last-child {
-        border-top: 1px solid #F6F5F5;
-        padding-bottom: 0;
-      }
-
-      span:first-child {
-        display: flex;
-        flex-direction: row;
-        
-        div:first-child {
-          margin-right: 20px;
-          width: 72px;
-          height: 72px;
-          background: #000000;
-          border-radius: 8px;
-        }
-
-        div {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-
-          & > span:first-child {
-            font-size: 14px;
-            font-weight: 400;
-            color: $cor-txt;
-          }
-
-          & > span:nth-child(2) {
-            font-size: 14px;
-            font-weight: 400;
-            color: $cor-txt2;
-          }
-
-          div {
-            margin-top: 10px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            font-size: 14px;
-            font-weight: 400;
-            color: $cor-txt;
-
-            span {
-              padding: 5px 12px;
-              margin-left: 10px;
-              font-size: 12px;
-              font-weight: 500;
-              color: $cor-txt;
-              border: 1px solid #EFEDED;
-              border-radius: 4px;
-
-              &:last-child {
-                color: $cor-txt;
-              }
-            }
-          }
-        }
-      }
-
-      div:last-child {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: 14px;
-        font-weight: 400;
-        color: $cor-txt;
-
-        img {
-          margin-right: 5px;
-        }
-      }
-    }
-  }
+  @include products;
 }
 
 @mixin order-three-or-more-products($color) {
@@ -973,96 +796,5 @@
     }
   }
 
-  section {
-    width: 100%;
-    height: max-content;
-    border: none;
-    margin: 0;
-    padding: 0;
-    
-    .product {
-      padding: 25px 0;
-      display: flex;
-      align-items: center;
-      border: none;
-      justify-content: space-between;
-
-      &:nth-child(n+2) {
-        border-top: 1px solid #F6F5F5;
-      }
-
-      &:last-child {
-        border-top: 1px solid #F6F5F5;
-        padding-bottom: 0;
-      }
-
-      span:first-child {
-        display: flex;
-        flex-direction: row;
-        
-        div:first-child {
-          margin-right: 20px;
-          width: 72px;
-          height: 72px;
-          background: #000000;
-          border-radius: 8px;
-        }
-
-        div {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-
-          & > span:first-child {
-            font-size: 14px;
-            font-weight: 400;
-            color: $cor-txt;
-          }
-
-          & > span:nth-child(2) {
-            font-size: 14px;
-            font-weight: 400;
-            color: $cor-txt2;
-          }
-
-          div {
-            margin-top: 10px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            font-size: 14px;
-            font-weight: 400;
-            color: $cor-txt;
-
-            span {
-              padding: 5px 12px;
-              margin-left: 10px;
-              font-size: 12px;
-              font-weight: 500;
-              color: $cor-txt;
-              border: 1px solid #EFEDED;
-              border-radius: 4px;
-
-              &:last-child {
-                color: $cor-txt;
-              }
-            }
-          }
-        }
-      }
-
-      div:last-child {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font-size: 14px;
-        font-weight: 400;
-        color: $cor-txt;
-
-        img {
-          margin-right: 5px;
-        }
-      }
-    }
-  }
+  @include products;
 }

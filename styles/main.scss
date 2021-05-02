@@ -1,6 +1,7 @@
 @import '_variables';
 @import 'mixins/mixins-status';
 @import 'mixins/mixins-orders';
+@import 'mixins/mixins-products';
 
 *, *::after, *::before {
   margin: 0;
@@ -229,7 +230,7 @@ body {
 
       /* Primeiro pedido */
       article:nth-child(2) {
-        @include order-two-products($cor-pedido-aprovado);
+        @include order-two-products($cor-pedido-entregue);
       }
 
       /* Segund0 pedido */
