@@ -4,6 +4,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
+  outline: none;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -189,6 +190,9 @@ body main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body main .sidebar {
@@ -196,7 +200,6 @@ body main .sidebar {
   min-width: 310px;
   height: 536px;
   margin-top: 58px;
-  margin-left: 120px;
   border-radius: 4px;
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
@@ -285,6 +288,11 @@ body main .sidebar nav a {
 
 body main .sidebar nav a:hover {
   background: rgba(243, 232, 231, 0.5);
+}
+
+body main .sidebar nav a:focus {
+  outline: none;
+  border: 1px solid #FF7C76;
 }
 
 body main .sidebar nav a img {
@@ -492,6 +500,11 @@ body main > section article:nth-child(2) > div button {
 
 body main > section article:nth-child(2) > div button:hover {
   background: #f7f6f6;
+}
+
+body main > section article:nth-child(2) > div button:focus {
+  outline: none;
+  border: 2px solid #5A4B49;
 }
 
 body main > section article:nth-child(2) > div button span {
@@ -1007,6 +1020,11 @@ body main > section article:nth-child(3) > div button {
 
 body main > section article:nth-child(3) > div button:hover {
   background: #f7f6f6;
+}
+
+body main > section article:nth-child(3) > div button:focus {
+  outline: none;
+  border: 2px solid #5A4B49;
 }
 
 body main > section article:nth-child(3) > div button span {
@@ -1525,6 +1543,11 @@ body main > section article:nth-child(4) > div button {
 
 body main > section article:nth-child(4) > div button:hover {
   background: #f7f6f6;
+}
+
+body main > section article:nth-child(4) > div button:focus {
+  outline: none;
+  border: 2px solid #5A4B49;
 }
 
 body main > section article:nth-child(4) > div button span {
@@ -2057,6 +2080,11 @@ body main > section article:nth-child(5) > div button {
 
 body main > section article:nth-child(5) > div button:hover {
   background: #f7f6f6;
+}
+
+body main > section article:nth-child(5) > div button:focus {
+  outline: none;
+  border: 2px solid #5A4B49;
 }
 
 body main > section article:nth-child(5) > div button span {
@@ -2605,6 +2633,11 @@ body main > section article:nth-child(6) > div button:hover {
   background: #f7f6f6;
 }
 
+body main > section article:nth-child(6) > div button:focus {
+  outline: none;
+  border: 2px solid #5A4B49;
+}
+
 body main > section article:nth-child(6) > div button span {
   font-size: 16px;
   font-weight: 500;
@@ -3149,6 +3182,11 @@ body main > section article:nth-child(7) > div button {
 
 body main > section article:nth-child(7) > div button:hover {
   background: #f7f6f6;
+}
+
+body main > section article:nth-child(7) > div button:focus {
+  outline: none;
+  border: 2px solid #5A4B49;
 }
 
 body main > section article:nth-child(7) > div button span {
