@@ -1,5 +1,9 @@
 # :page_facing_up: Processo seletivo SEOX: Desenvolvedor Front-end HTML e CSS
 
+## :computer: Página do projeto
+
+Acesse o projeto por esse link: [Projeto](https://marcosadriano05.github.io/seox-test/)
+
 ## :pushpin: Teste técnico
 
 O objetivo desta etapa do processo seletivo é reproduzir o layout de um site que foi disponibilizado na ferramenta Figma utilizando HTML e CSS.
